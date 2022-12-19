@@ -26,13 +26,3 @@ with open("day2.txt", "r") as f:
 score = sum((get_result_score(you=you, them=them) for them, you in strategy))
 
 print(score)
-
-# you lose, draw, win
-MATCH_END = {
-    "X": -1,
-    "Y": 0,
-    "Z": 1
-}
-
-def result_new_decode(them, match_result):
-    return 3*(MATCH_END[match_result]+1)+r
